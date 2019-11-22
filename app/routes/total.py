@@ -6,7 +6,8 @@ total_bp = Blueprint('total_bp', __name__)
 @total_bp.route('/total', methods=['POST', 'GET'])
 def total():
     """
-    This endpoint calculates the sum of a given list of numbers.
+    This endpoint calculates the sum of a given list of numbers. Assuming one wants to try custom input
+    there is also a POST method provided.
     methods:
         - GET: when get is called it will compute a hard-coded list of numbers as per specs.
         - POST: when post is called it will compute user provided list from a json body.
